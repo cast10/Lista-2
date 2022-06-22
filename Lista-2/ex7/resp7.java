@@ -11,16 +11,17 @@ public class resp7 {
         System.out.println("Quantidade de horas trabalhadas?");
         double quantHoras = sc.nextDouble();
 
-        double salárioMensal = (valorHoras*quantHoras);
-        System.out.println("Total do Salário Bruto " + salárioMensal);
+        double salarioMensal = (valorHoras*quantHoras);
+        System.out.println("Total do Salário Bruto " + salarioMensal);
 
 
-        double inss = salárioMensal * 0.11;
-        double irrf  = salárioMensal *.08;
-        double sindicato = salárioMensal* .05;
-        double salarioLiq = salárioMensal-inss-irrf-sindicato;
+        double inss = salarioMensal * 0.08;
+        double irrf  = salarioMensal * 0.11;
+        double sindicato = salarioMensal* 0.05;
+        double salarioLiq = salarioMensal-inss-irrf-sindicato;
 
         System.out.println("Desconto do INSS  " + inss );
+        System.out.println("Desconto do IRRF  " + irrf );
         System.out.println("Desconto do Sindicato   " + sindicato );
         System.out.println("Salário líquido " + salarioLiq );
 
